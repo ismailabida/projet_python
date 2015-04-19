@@ -1,0 +1,12 @@
+{% extends "base_page.html" %}
+
+{% block title %}Update Movie{% endblock %}
+
+{% block content %}
+<h1>Delete Movie</h1>
+<form action="" method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <input type="submit" value="Confirm" />
+</form>
+{% endblock %}
+
